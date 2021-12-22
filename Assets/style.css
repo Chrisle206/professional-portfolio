@@ -1,0 +1,162 @@
+/* Sets text inside the body color */
+body {
+ color: #485874;
+}
+/* Sets the h3 text color */
+h3 {
+    color: #31343c;
+}
+/*sets the background-color and adds padding*/
+.header {
+    background-color: #31343c;
+    padding: 10px 0;
+}
+/* /*sets background-color, sets font-size to 60px adds padding, */
+/* width is the size of the content, and is diplayed as an inline-block */
+.header h1 {
+    background-color: #9dcbcb;
+    font-size: 60px;
+    padding: 0 10px 0 60px;
+    width: fit-content;
+    display: inline-block;
+}
+/* header navigation bar has padding, 80px of margin on the right */
+/* words shifted to the right side and font-size set to 20px */
+.header nav {
+    padding-top: 15px;
+    margin-right: 80px;
+    float: right;
+    font-size: 20px;
+}
+/*Removes dots from unordered list */
+.header nav ul {
+    list-style-type: none;
+}
+/* list items set side-by-side with padding in between each element */
+/* font set to 20px */
+.header nav ul li {
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 20px;
+}
+
+/* Takes away anchor element's underline, sets color, adds border on bottom */
+.header nav ul li a {
+    color: #9ecacd;
+    text-decoration: none;
+    border-bottom: 3px solid;
+} 
+/* sets background color of main content */
+.content {
+    background-color: #ebebf3;
+}
+/* sets specifications for h2 in main body */
+.content h2 {
+    font-size: 50px;
+    border-right: 2px solid;
+    padding: 4px;
+    display: inline-block;
+    margin: 20px 20px 20px 155px;
+}
+/* creates banner image */
+.block {
+height: 240px;
+width: 100%;
+ background-image: url(./images/Untitled.jpg);
+}
+/* sets specifications for h3 in the banner */
+.block h3 {
+    background-color: #9dcbcb;
+    float: right;
+    font-size: 35px;
+    margin-top: 180px;
+    margin-right: 80px;
+    width:min-content;
+}
+/* sets about-me section to inline block and width to fit content */
+.about-me section {
+    display: inline-block;
+    width: fit-content;
+}
+/* adds 30px padding above the first pre element */
+#pre1 {
+    padding-top: 30px;
+}
+/* sets specifications for pre elements */
+.about-me pre {
+ align-items: center;
+ overflow: auto;
+ white-space: wrap;
+ font-size: 12px;
+}
+/* sets specifications for each card */
+.card {
+    min-height: 50%;
+    outline: 2px solid #9ecacd;
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    width: fit-content;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* creates small cards */
+.small-card {
+    width:fit-content;
+    background-color: #9ecacd;
+}
+/* sets specifications for text inside small card */
+.small-card p {
+    margin-top: 4px;
+    color: #32353d;
+    font-size: 12px;
+}
+/* sets elements in this section to inline-block */
+.contact-me section {
+    font-size: 20px;
+    width: fit-content;
+    display: inline-block;
+}
+/* removes dots from unordered list */
+.contact-me ul {
+    list-style-type: none;
+
+}
+/* makes items side-by-side */
+.contact-me ul li {
+    display: inline-block;
+    padding: 0 60px;
+    font-size: 15px;
+}
+
+/* Takes away anchor element's underline, sets color, adds border on bottom */
+.contact-me ul li a {
+    color: #485874;
+    text-decoration: none;
+    border-bottom: 3px solid;
+}
+/* adds hover effect, changes background-color to salmon */
+a:hover {
+   background-color: salmon;
+}
+/* resizes content to fit screen with width 768px */
+@media screen and (min-width: 768px) {
+    .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact-me {
+        max-width: 50%;
+    }
+}
+/* resizes content to fit screen with width 992px */
+@media screen and (min-width: 992px) {
+    .card {
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+    .contact-me {
+        max-width: 33%;
+    }
+}
